@@ -4,13 +4,22 @@ class Api::V1::FoodsController < ApiController
     if food.save
       render json: food
     else
-
+      render status: 400, json: {}
     end
+  end
+
+  def index
+    foods = Food.all
+    render json: foods
   end
 
   private
 
   def food_params
-    params.require(:food).permit(:name, :calories)
+    begin
+      params.require(:food).permit(:name, :calories)
+    rescue  ActionController::ParameterMissing
+      {}
+    end
   end
 end
