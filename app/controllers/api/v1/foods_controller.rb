@@ -18,6 +18,15 @@ class Api::V1::FoodsController < ApiController
     render json: food
   end
 
+  def update
+    food = Food.find(params[:id])
+    if food_params.empty?
+      render status: 400, json: {}
+    elsif food.update(food_params)
+      render json: food
+    end
+  end
+
   private
 
   def food_params
