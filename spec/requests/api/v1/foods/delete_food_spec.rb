@@ -12,4 +12,10 @@ describe 'DELETE /api/v1/foods/:id' do
     expect(response.status).to eq(204)
     expect(Food.count).to eq(10)
   end
+
+  it 'returns 404 if food not found' do
+    delete '/api/v1/foods/200'
+
+    expect(response.status).to eq(404)
+  end
 end
