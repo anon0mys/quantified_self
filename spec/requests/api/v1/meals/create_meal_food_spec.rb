@@ -7,7 +7,7 @@ describe 'POST /api/v1/meals/:meal_id/foods/:id' do
 
     post "/api/v1/meals/#{meal.id}/foods/#{food.id}"
 
-    expected = { "message": "Successfully added FOODNAME to MEALNAME" }
+    expected = { "message": "Successfully added #{food.name} to #{meal.name}" }
 
     expect(response.status).to eq(201)
     expect(response.body).to eq(expected.to_json)
