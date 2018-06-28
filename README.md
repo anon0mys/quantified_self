@@ -43,8 +43,8 @@ rspec spec/requests/api/v1/invoices/invoices_spec.rb
 ```
 
 ### Endpoints
-- Documentation for all endpoints is here: 
-[Endpoint Explanation](https://github.com/anon0mys/rales_engine/blob/master/endpoint.md)
+- Documentation for all endpoints is here:
+[Endpoint Explanation](https://github.com/anon0mys/quantified_self/blob/read-me/endpoint.md)
 
 
 ### Authors
