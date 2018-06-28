@@ -46,6 +46,14 @@ rspec spec/requests/api/v1/invoices/invoices_spec.rb
 - Documentation for all endpoints is here:
 [Endpoint Explanation](https://github.com/anon0mys/quantified_self/blob/read-me/endpoint.md)
 
+### Contributions
+Quantified self is open source and welcomes contributions. If you would like to contribute please follow this workflow:
+- Ensure you have a working Ruby environment with the appropriate [Versions/Prerequisites](#versions-prerequisites)
+- Fork, then clone the repository
+- Follow the [Setup](#setup) instructions
+- Make your desired changes and accompanying tests
+- Open a PR to the anon0mys/quantified_self repository
+- An app administrator will conduct code review and contact you once the fix is accepted or rejected
 
 ### Authors
 - [Evan Wheeler](https://github.com/anon0mys)
