@@ -31,4 +31,10 @@ describe 'GET /api/v1/meals/:meal_id/foods' do
 
     expect(response.body).to eq(expected.to_json)
   end
+
+  it 'returns 404 if no meal is found' do
+    get "/api/v1/meals/20/foods"
+
+    expect(response.status).to eq(404)
+  end
 end

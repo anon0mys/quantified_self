@@ -1,4 +1,4 @@
-class Api::V1::MealsController < ApplicationController
+class Api::V1::MealsController < ApiController
   def index
     render json: Meal.all
   end
